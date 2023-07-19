@@ -21,7 +21,7 @@ Function GetAllBlobs
     ## Get all the blobs  
     $blobs=Get-AzStorageBlob -Container $containerName  -Context $ctx  
     ## Loop through all the blobs
-    Start-Transcript -Path .\1.txt
+    Start-Transcript -Path .\file_export.txt
     foreach($blob in $blobs)  
     {  
         write-host -Foregroundcolor Yellow $blob.Name
