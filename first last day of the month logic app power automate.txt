@@ -1,0 +1,14 @@
+
+Logic Apps and Power Automate
+- Create initialize variable with expression
+
+first day of the last month
+addDays(startOfMonth(utcNow()),-1)
+
+last day of the last mosnth
+startOfMonth(addDays(startOfMonth(utcNow()),-1))
+
+change format of the data time
+formatDateTime(addDays(startOfMonth(utcNow()),-1),'yyyy-MM-dd')
+
+formatDateTime(startOfMonth(addDays(startOfMonth(utcNow()),-1)),'yyyy-MM-dd')
