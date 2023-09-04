@@ -1,0 +1,46 @@
+Category,Name,Documentation URL
+Compute,Azure Virtual Machines,https://docs.microsoft.com/azure/virtual-machines/
+Compute,Azure App Service,https://docs.microsoft.com/azure/app-service/
+Compute,Azure Functions,https://docs.microsoft.com/azure/azure-functions/
+Compute,Azure Kubernetes Service (AKS),https://docs.microsoft.com/azure/aks/
+Compute,Azure Batch,https://docs.microsoft.com/azure/batch/
+Networking,Azure Virtual Network,https://docs.microsoft.com/azure/virtual-network/
+Networking,Azure ExpressRoute,https://docs.microsoft.com/azure/expressroute/
+Networking,Azure Load Balancer,https://docs.microsoft.com/azure/load-balancer/
+Networking,Azure VPN Gateway,https://docs.microsoft.com/azure/vpn-gateway/
+Networking,Azure Firewall,https://docs.microsoft.com/azure/firewall/
+Storage,Azure Blob Storage,https://docs.microsoft.com/azure/storage/blobs/
+Storage,Azure File Storage,https://docs.microsoft.com/azure/storage/files/
+Storage,Azure Queue Storage,https://docs.microsoft.com/azure/storage/queues/
+Storage,Azure Disk Storage,https://docs.microsoft.com/azure/virtual-machines/disks-types/
+Storage,Azure Data Lake Storage,https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction
+Databases,Azure SQL Database,https://docs.microsoft.com/azure/sql-database/
+Databases,Azure Cosmos DB,https://docs.microsoft.com/azure/cosmos-db/
+Databases,Azure Database for MySQL,https://docs.microsoft.com/azure/mysql/
+Databases,Azure Database for PostgreSQL,https://docs.microsoft.com/azure/postgresql/
+Databases,Azure Cache for Redis,https://docs.microsoft.com/azure/azure-cache-for-redis/
+AI & Machine Learning,Azure Machine Learning,https://docs.microsoft.com/azure/machine-learning/
+AI & Machine Learning,Azure Cognitive Services,https://docs.microsoft.com/azure/cognitive-services/
+AI & Machine Learning,Azure Databricks,https://docs.microsoft.com/azure/azure-databricks/
+AI & Machine Learning,Azure Bot Service,https://docs.microsoft.com/azure/bot-service/
+Analytics & Big Data,Azure Data Factory,https://docs.microsoft.com/azure/data-factory/
+Analytics & Big Data,Azure HDInsight,https://docs.microsoft.com/azure/hdinsight/
+Analytics & Big Data,Azure Synapse Analytics,https://docs.microsoft.com/azure/synapse-analytics/
+Analytics & Big Data,Azure Stream Analytics,https://docs.microsoft.com/azure/stream-analytics/
+IoT,Azure IoT Hub,https://docs.microsoft.com/azure/iot-hub/
+IoT,Azure IoT Central,https://docs.microsoft.com/azure/iot-central/
+IoT,Azure IoT Edge,https://docs.microsoft.com/azure/iot-edge/
+IoT,Azure Time Series Insights,https://docs.microsoft.com/azure/time-series-insights/
+Security & Identity,Azure Active Directory,https://docs.microsoft.com/azure/active-directory/
+Security & Identity,Azure Key Vault,https://docs.microsoft.com/azure/key-vault/
+Security & Identity,Azure Security Center,https://docs.microsoft.com/azure/security-center/
+Security & Identity,Azure Sentinel,https://docs.microsoft.com/azure/sentinel/
+DevOps,Azure DevOps Services,https://docs.microsoft.com/azure/devops/
+DevOps,Azure DevTest Labs,https://docs.microsoft.com/azure/devtest-labs/
+DevOps,Azure Kubernetes Service (AKS) Dev Spaces,https://docs.microsoft.com/azure/aks/dev-spaces/
+DevOps,Azure Artifacts,https://docs.microsoft.com/azure/devops/artifacts/
+Management & Governance,Azure Resource Manager,https://docs.microsoft.com/azure/azure-resource-manager/
+Management & Governance,Azure Policy,https://docs.microsoft.com/azure/policy/
+Management & Governance,Azure Blueprints,https://docs.microsoft.com/azure/governance/blueprints/
+Management & Governance,Azure Monitor,https://docs.microsoft.com/azure/azure-monitor/
+Management & Governance,Azure Cost Management and Billing,https://docs.microsoft.com/azure/cost-management/
