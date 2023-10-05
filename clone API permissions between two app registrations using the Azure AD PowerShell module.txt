@@ -1,0 +1,41 @@
+Install-Module AzureAD
+Import-Module AzureAD
+
+Connect-AzAccount
+Connect-AzureAD
+
+$sourceAppClientId = "SourceAppClientId"
+$destinationAppClientId = "DestinationAppClientId"
+
+$sourceApp = Get-AzureADApplication -ObjectId $sourceAppClientId
+$destinationApp = Get-AzureADApplication -ObjectId $destinationAppClientId
+
+# Clear existing API permissions in the destination app registration (if needed)
+$destinationApp.RequiredResourceAccess = @()
+
+# Clone API permissions from the source app to the destination app
+foreach ($apiPermission in $sourceApp.RequiredResourceAccess) {
+    $newApiPermission = New-Object Microsoft.Open.AzureAD.Model.RequiredResourceAccess
+
+    # Set the resource app ID
+    $newApiPermission.ResourceAppId = $apiPermission.ResourceAppId
+
+    # Clone the resource access permissions
+    $newApiPermission.ResourceAccess = @()
+
+    foreach ($permission in $apiPermission.ResourceAccess) {
+        $newPermission = New-Object Microsoft.Open.AzureAD.Model.ResourceAccess
+        $newPermission.Id = $permission.Id
+        $newPermission.Type = $permission.Type
+
+        $newApiPermission.ResourceAccess += $newPermission
+    }
+
+    # Add the cloned API permission to the destination app registration
+    $destinationApp.RequiredResourceAccess += $newApiPermission
+}
+
+# Update the destination app registration
+Set-AzureADApplication -ObjectId $destinationApp.ObjectId -RequiredResourceAccess $destinationApp.RequiredResourceAccess
+
+(Get-AzureADApplication -ObjectId $destinationAppClientId).RequiredResourceAccess
